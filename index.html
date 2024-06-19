@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Contact Us</h1>
+        <form class="contact-us">
+            <div class="form-group">
+                <label for="firstName">First Name*</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name*</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="queryType">Query type</label>
+            </div>
+            <div class="form-group">
+                <label class="radio-button">
+                    <input type="radio" name="queryType" value="general">General Enquiry*
+                </label>
+            </div>
+            <div class="form-group">
+                <label class="radio-button">
+                    <input type="radio" name="queryType" value="support">Support Enquiry*
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label class="checkbox">
+                    <input type="checkbox" name="consent" required>I consent to being contacted by the team*
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
